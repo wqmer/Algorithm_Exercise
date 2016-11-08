@@ -27,7 +27,7 @@ public class Partition {
       }
       
       if (small == null) return large ; //check 
-      temp1.next = large ;//merge 2 part to a one lsit 
+      temp1.next = large ;//merge 2 part to a one list
       return small;
 }
     public Node<Integer> Partition2(Node <Integer> list , int a) {
@@ -49,18 +49,11 @@ public class Partition {
     	tail = list;
     	}
     	
-    	
-    	
-    	
-    	
-    	
     }
     	
-    	
-  
      return head ;
     }
-    //uncomplished 
+    //uncompleted
     
 }
 
