@@ -26,13 +26,12 @@ public Node <type> reverse2 (Node <type> list)
 {  	if ( list.next == null || list == null)
 	return list ;
 Node <type> rev_list = null  ;
-Node <type> temp ;
 
-while(list.next != null ){
-	temp = list.next ;
+
+while(list != null ){
 	rev_list.next = rev_list ;
 	rev_list = list ;
-	list = temp ;
+	list = list.next;
 }
 	return rev_list;
 			
