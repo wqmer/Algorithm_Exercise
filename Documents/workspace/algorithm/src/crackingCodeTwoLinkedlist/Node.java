@@ -1,10 +1,10 @@
 package crackingCodeTwoLinkedlist;
 
 public class Node<type> { 
-	public type Data ;
+	public Integer Data ;
 	public Node<type> next ;
 	
-	public Node( type Data , Node<type> next) {
+	public Node( Integer Data , Node<type> next) {
 		this.Data = Data ;
 		this.next = next ;
 	
