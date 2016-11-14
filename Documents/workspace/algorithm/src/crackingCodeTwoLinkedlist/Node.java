@@ -11,14 +11,15 @@ public class Node<type> {
 	}
 	
 //Recursion	
+// 5 -> 6 -> 7 -> 1 -> 2;
 public Node <type> reverse(Node <type> list){
 	if ( list.next == null || list == null)
 return list ;
-	Node <type> current ;
-	current = list.next ;
-	list.next = null ;
-	current.next = list ;
-	return reverse(list.next) ;
+	Node remainning = reverse(list.next);
+	list.next.next = list ;// set 2 -> 1
+	list.next = null ;//remove link form 1 -> 2
+
+	return remainning ;
 }
 
 //Iteration
