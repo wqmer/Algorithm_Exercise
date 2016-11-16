@@ -6,7 +6,6 @@ public class MyStack<T>{
 
 	public static class StackNode<T> 
 	{
-		
 		private T data ;
 		private StackNode<T> next ;
 		private StackNode(T data){
@@ -29,7 +28,6 @@ public class MyStack<T>{
 	public void push(T item)
 	{
 		if (top == null) top.data = item ;
-		
 		StackNode<T> current = new StackNode<T>(item);
 		current.next = top ;
 		top = current ;
@@ -42,7 +40,6 @@ public class MyStack<T>{
 	}
 	
 	public boolean isEmpty(){
-		
 		return top == null ;
 		
 	}	
