@@ -3,7 +3,7 @@ package crackingCodeFourTreesAndGraphs;
 import java.util.Queue;
 
 public class BFS {
-	void srearch ( Node Root){
+	void search ( Node Root){
 		Queue<E> q = new Queue();
 		Root.marked = true ;
 		q.add(Root);//q.enqueue(Root)
